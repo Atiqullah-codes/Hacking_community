@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0,0,0.5);
+    position: sticky;
+    top: 0;
+
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin:0;
+} 
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 20px 0;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    transform: all .5s ease;
+    color: white;
+
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+
+
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+#home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../images/nice.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+}
+
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 92px;
+}
+
+
+
+.btn{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius:25px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* services  section*/
+
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    
+}
+
+    
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top,rgb(49, 45, 45) 50%, white);
+    background-size: 100% 200%;
+    transition: all.8s;
+}
+
+
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(49, 45, 45);
+}
+
+.box img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+/* portfoloi section */
+
+#portfolio{
+    display: inline-block;
+}
+
+.head{
+    margin-top: 60px;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.p{
+    text-align: center;
+    font-family: cursive;
+}
+
+
+div{
+    margin: 30px;
+}
+
+.menu ul{
+    width: 260px;
+    position: absolute;
+    left: 80px;
+    top: 1860px;
+
+
+}
+.menu ul li{
+    list-style-type: none;
+
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius:25px;
+    
+}
+
+.menu ul li a:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+
+
+
+}
+
+.gallery img{
+    width: 310px;
+    height: 260px;
+    border-radius: 3px;
+
+}
+
+/* section pricing */
+
+#pricing{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f5ecec;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxx{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 415px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top,rgb(49, 45, 45) 50%, white);
+    background-size: 100% 200%;
+    transition: all.8s;
+}
+
+
+.boxx:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(49, 45, 45);
+}
+
+.boxx img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.price{
+    font-size: 23px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* section team */
+
+
+.rows{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.box1{
+
+    flex-direction: column;
+    width: 350px;
+    height: 415px;
+    margin: 10px;
+    background: linear-gradient(to top,rgb(200, 200, 200) 50%, white);
+
+}
+
+
+.box1:hover{
+    background-position: left bottom;
+    border: none;
+    box-shadow: 0 0 20px rgb(49, 45, 45);
+
+}
+
+.box1 img{
+    width: 350px;
+    height: 350px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+
+}
+
+p{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    margin-top: 10px;
+}
+.ctn{
+    font-weight: 12px;
+    margin: 10px;
+}
+ 
+/* contact section */
+
+#contact{
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: black;
+    color:blanchedalmond;
+    padding: 20px;
+}
+
+.ctn{
+    margin: 20px;
+    border: solid white 1px;
+}
+
+.input{
+
+    padding: 12px;
+    margin: 15px;
+    width: 45%;
+
+}
+  
+#msg{
+    width: 95%;
+    padding: 10px;
+    margin: 15px;
+
+}
+
+#send{
+    margin-left: 16px;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 14%;
+    cursor: pointer;
+
+}
+
+form ul.add li{
+    display: inline;
+    list-style-type: none;
+    margin-left: 14px;
+    margin-top: 30px;
+    font-weight: bold;
+
+
+}
